@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #14141a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-image: url(/image.jpg);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: monospace;
+  background-color: #26282eb4;
+  cursor: pointer;
+  transition: 0.10s;
+  border-color: #151b20ee;
+  box-shadow: 2px 5px 3px #020202;
+}
+
+button:hover {
+  border-color: #646cff52;
+}
+
+button:active {
+  border-color: #646cff;
+}
+
+h1{
+  position: relative;
+  bottom: 40%
+}
+
+#drum-machine {
+  background-color: #15151ab9;
+  width: 35em;
+  height: 35em;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 2px 5px 4px #02020296;
+}
+
+.top-text {
+  position: relative;
+  display: flex;
+  top: -25px;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 5em;
+  height: 2em;
+  border-radius: 5px;
+  background-color: #1a191bce;
+  margin: auto;
+  box-shadow: 2px 5px 4px #02020296
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 10px;
+  width: 30em;
+  height: 28em;
+  margin: auto;
+}
+
+@keyframes press{
+  from{border-color: #343b41}
+  to{border-color: #646cff;}
+}
+
+@keyframes press-2{
+  from{border-color: #343b41}
+  to{border-color: #646cff;}
+}
+
+.control-buttons{
+  display: flex;
+}
+#mute{
+  position: relative;
+  bottom: -17.4em;
+  width: 30%;
+  margin: auto;
+}
+
+#loop-button{
+  position: relative;
+  bottom: -17.4em;
+  width: 30%;
+  margin: auto;
+}
